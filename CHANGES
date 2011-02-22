@@ -1,0 +1,13 @@
+This file summarizes the changes that have been made since publication
+to the program examples printed in "The Linux Programming Interface".
+Background on some of these changes can be found in the online errata
+for TLPI, available at http://man7.org/tlpi/errata/.
+
+2010-11-13
+        sockets/us_abstract_bind.c
+                The code was improved as per the errata for page 1176.
+
+2011-01-17
+        timers/real_timer.c
+               A mistake in the ordering of the code in main() was fixed.
+               See the erratum for page 483.

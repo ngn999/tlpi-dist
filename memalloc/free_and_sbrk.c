@@ -9,21 +9,28 @@
 \**********************************************************************/
 
 /* free_and_sbrk.c
-
+   
    Test if free(3) actually lowers the program break.
-
+   
    Usage: free_and_sbrk num-allocs block-size [step [min [max]]]
-
+   
    Try: free_and_sbrk 1000 10240 2 1 1000
         free_and_sbrk 1000 10240 1 1 999
         free_and_sbrk 1000 10240 1 1 500
-
+        
         (Only the last of these should see the program break lowered.)
 */
 #include "tlpi_hdr.h"
 
 #define MAX_ALLOCS 1000000
-
+/** 
+ * 
+ * 
+ * @param argc  arg number
+ * @param argv  arg
+ * 
+ * @return 0, success, other failture
+ */
 int
 main(int argc, char *argv[])
 {
